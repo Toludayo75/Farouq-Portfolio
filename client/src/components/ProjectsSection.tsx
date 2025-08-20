@@ -83,14 +83,17 @@ export default function ProjectsSection() {
                   {project.links.map((link, linkIndex) => {
                     const LinkIcon = link.icon;
                     return (
-                      <button
+                      <a
                         key={linkIndex}
+                        href={link.href} // matches your projects array
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={`${linkIndex === 0 ? 'text-islamic-green-500 hover:text-islamic-green-400' : 'text-gold-500 hover:text-gold-400'} flex items-center gap-2 transition-colors`}
                         data-testid={`project-${index}-link-${linkIndex}`}
                       >
                         <LinkIcon size={16} />
                         {link.label}
-                      </button>
+                      </a>
                     );
                   })}
                 </div>
