@@ -10,7 +10,7 @@ export default function ProjectsSection() {
       color: "from-islamic-green-500 to-islamic-green-700",
       techColor: "text-islamic-green-500",
       links: [
-        { icon: Github, label: "GitHub", href: "#" }
+        { icon: Github, label: "GitHub", href: "https://github.com/Farouq-okeniyi" }
       ]
     },
     {
@@ -21,7 +21,7 @@ export default function ProjectsSection() {
       color: "from-blue-500 to-purple-700",
       techColor: "text-blue-400",
       links: [
-        { icon: Github, label: "Private Repo", href: "#" },
+        { icon: Github, label: "Private Repo", href: "https://github.com/Farouq-okeniyi" },
         { icon: Trophy, label: "Google Featured", href: "#" }
       ]
     },
@@ -33,7 +33,7 @@ export default function ProjectsSection() {
       color: "from-red-500 to-pink-700",
       techColor: "text-red-400",
       links: [
-        { icon: FileText, label: "Documentation", href: "#" },
+        { icon: FileText, label: "Documentation", href: "https://github.com/Farouq-okeniyi" },
         { icon: BarChart3, label: "Analysis Report", href: "#" }
       ]
     }
