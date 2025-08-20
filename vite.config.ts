@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import { fileURLToPath } from "url";
 
-// Convert import.meta.url to __dirname equivalent
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
@@ -16,14 +15,8 @@ export default defineConfig({
     },
   },
   root: path.resolve(__dirname, "client"),
-build: {
-  outDir: path.resolve(__dirname, "dist"), // instead of dist/public
-  emptyOutDir: true,
-}
-  server: {
-    fs: {
-      strict: true,
-      deny: ["**/.*"],
-    },
-  },
+  build: {
+    outDir: path.resolve(__dirname, "dist"),
+    emptyOutDir: true
+  }
 });
